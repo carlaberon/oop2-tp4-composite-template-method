@@ -1,18 +1,10 @@
 package ejercicio2;
 
-import java.time.Duration;
-import java.util.Optional;
+public interface Item {
 
-public abstract class Item {
-    private final String name;
-    private final String description;
+    void addTask(Item tarea);
 
-    public Item(String name, String description) {
-        this.name = name;
-        this.description = description;
-    }
+    int calcularDuracionTotal();
 
-    abstract void addTask(Item tarea);
-
-    abstract Optional<Duration> calcularDuracionTotal();
+    int duracion();
 }

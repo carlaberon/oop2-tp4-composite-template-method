@@ -1,25 +1,36 @@
 package ejercicio2;
 
-import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
-public class UserHistory extends Item {
-    List<Item> tareas;
+public class UserHistory implements Item {
+    private List<Item> tareas = new ArrayList<>();
+    private String name;
+    private String description;
 
     public UserHistory(String name, String description) {
-        super(name, description);
+        this.name = name;
+        this.description = description;
 
     }
 
     @Override
-    void addTask(Item tarea) {
+    public void addTask(Item tarea) {
         this.tareas.add(tarea);
     }
 
+    @Override
+    public int calcularDuracionTotal() {
+        int duracionTotal = 0;
+        for (Item task : tareas) {
+            duracionTotal += task.duracion();
+        }
+        return duracionTotal;
+    }
 
     @Override
-    Optional<Duration> calcularDuracionTotal() {
-        return Optional.empty();
+    public int duracion() {
+        return 0;
     }
+
 }

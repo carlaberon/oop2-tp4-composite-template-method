@@ -1,21 +1,27 @@
 package ejercicio2;
 
-import java.time.Duration;
-import java.util.Optional;
+public class Spike implements Item {
+    private final String name;
+    private final String description;
 
-public class Spike extends Item {
     public Spike(String name, String description) {
-        super(name, description);
+        this.name = name;
+        this.description = description;
+    }
+
+
+    @Override
+    public void addTask(Item tarea) {
     }
 
     @Override
-    void addTask(Item tarea) {
-
+    public int calcularDuracionTotal() {
+        return 0;
     }
 
     @Override
-    Optional<Duration> calcularDuracionTotal() {
-        return Optional.empty();
+    public int duracion() {
+        return 0;
     }
 
 }

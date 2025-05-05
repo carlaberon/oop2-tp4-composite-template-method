@@ -1,22 +1,26 @@
 package ejercicio2;
 
-import java.time.Duration;
-import java.util.Optional;
+public class Task implements Item {
+    private String name;
+    private String description;
+    private int duracion;
 
-public class Task extends Item {
-    private Duration duracion;
-
-    public Task(String name, String description, Duration duracion) {
-        super(name, description);
+    public Task(String name, String description, int duracion) {
+        this.name = name;
+        this.description = description;
         this.duracion = duracion;
     }
 
     @Override
-    void addTask(Item tarea) {
+    public void addTask(Item tarea) {
     }
 
     @Override
-    Optional<Duration> calcularDuracionTotal() {
-        return Optional.empty();
+    public int calcularDuracionTotal() {
+        return 0;
+    }
+
+    public int duracion() {
+        return this.duracion;
     }
 }
