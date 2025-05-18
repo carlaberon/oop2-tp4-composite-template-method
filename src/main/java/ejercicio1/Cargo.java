@@ -4,4 +4,6 @@ public enum Cargo {
     DIRECTOR,
     MANDOMEDIO,
     JUNIOR;
+
+
 }

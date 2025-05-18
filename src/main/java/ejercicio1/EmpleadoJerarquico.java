@@ -13,7 +13,7 @@ public class EmpleadoJerarquico implements Empleado {
     private List<Empleado> empleados;
 
     public EmpleadoJerarquico(String nombre, float salario, Cargo cargo) {
-        if ((!cargo.equals(Cargo.DIRECTOR)) || (!cargo.equals(Cargo.MANDOMEDIO))) {
+        if (!cargo.equals(Cargo.DIRECTOR) && !cargo.equals(Cargo.MANDOMEDIO)) {
             throw new RuntimeException(VALIDO_EMPLEADO_JERARQUICO);
         }
         this.nombre = nombre;
