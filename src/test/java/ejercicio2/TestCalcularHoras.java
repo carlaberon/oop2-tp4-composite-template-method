@@ -36,6 +36,7 @@ public class TestCalcularHoras {
         RuntimeException ex = assertThrows(RuntimeException.class, () -> userHistory.addTask(spike));
 
         assertEquals(6, project.calcularHoras());
+        
         assertEquals("Una historia de usuario se compone de tareas.", ex.getMessage());
 
 

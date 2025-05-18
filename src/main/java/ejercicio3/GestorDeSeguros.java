@@ -1,0 +1,12 @@
+package ejercicio3;
+
+import java.util.List;
+
+public class GestorDeSeguros {
+
+    private List<Seguro> seguros;
+
+    public GestorDeSeguros(List<Seguro> seguros) {
+        this.seguros = seguros;
+    }
+}
