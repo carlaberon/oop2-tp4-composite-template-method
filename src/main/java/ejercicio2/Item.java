@@ -4,7 +4,8 @@ public interface Item {
 
     void addTask(Item tarea);
 
-    int calcularDuracionTotal();
+    int calcularDuracion();
 
-    int duracion();
+    Tipo tipo();
+
 }

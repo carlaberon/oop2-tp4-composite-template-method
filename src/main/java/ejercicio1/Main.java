@@ -7,7 +7,6 @@ public class Main {
         EmpleadoJerarquico director = new EmpleadoJerarquico("unDirector", 100, Cargo.DIRECTOR);
         EmpleadoJerarquico mandoMedio = new EmpleadoJerarquico("mandoMedio", 50, Cargo.MANDOMEDIO);
         EmpleadoRegular empleadoRegular = new EmpleadoRegular(Cargo.JUNIOR, "empleadoRegular", 100);
-
         director.agregarEmpleado(mandoMedio);
         mandoMedio.agregarEmpleado(empleadoRegular);
 //        director.agregarEmpleado(empleadoRegular);

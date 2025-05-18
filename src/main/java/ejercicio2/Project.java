@@ -11,8 +11,8 @@ public class Project {
 
     public int calcularHoras() {
         int horasTotales = 0;
-        for (Item task : items) {
-            horasTotales += task.calcularDuracionTotal();
+        for (Item task : this.items) {
+            horasTotales += task.calcularDuracion();
         }
         return horasTotales;
     }

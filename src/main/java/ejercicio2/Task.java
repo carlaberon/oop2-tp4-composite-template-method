@@ -4,11 +4,13 @@ public class Task implements Item {
     private String name;
     private String description;
     private int duracion;
+    private Tipo tipo;
 
-    public Task(String name, String description, int duracion) {
+    public Task(String name, String description, int duracion, Tipo tipo) {
         this.name = name;
         this.description = description;
         this.duracion = duracion;
+        this.tipo = tipo;
     }
 
     @Override
@@ -16,11 +18,14 @@ public class Task implements Item {
     }
 
     @Override
-    public int calcularDuracionTotal() {
-        return 0;
-    }
+    public int calcularDuracion() {
 
-    public int duracion() {
         return this.duracion;
     }
+
+    @Override
+    public Tipo tipo() {
+        return this.tipo;
+    }
+
 }

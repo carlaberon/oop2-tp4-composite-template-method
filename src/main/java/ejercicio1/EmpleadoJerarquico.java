@@ -1,5 +1,6 @@
 package ejercicio1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EmpleadoJerarquico implements Empleado {
@@ -19,6 +20,7 @@ public class EmpleadoJerarquico implements Empleado {
         this.nombre = nombre;
         this.salario = salario;
         this.cargo = cargo;
+        this.empleados = new ArrayList<>();
     }
 
     @Override
