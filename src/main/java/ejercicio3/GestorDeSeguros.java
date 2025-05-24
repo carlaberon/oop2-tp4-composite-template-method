@@ -9,4 +9,12 @@ public class GestorDeSeguros {
     public GestorDeSeguros(List<Seguro> seguros) {
         this.seguros = seguros;
     }
+
+    public double calcularCostoTotal() {
+        double costoTotal = 0;
+        for (Seguro seguro : this.seguros) {
+            costoTotal += seguro.costo();
+        }
+        return costoTotal;
+    }
 }
