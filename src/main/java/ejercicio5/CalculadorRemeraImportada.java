@@ -1,13 +1,13 @@
 package ejercicio5;
 
-public class CalculoRemeraImportada extends Calculador {
+public class CalculadorRemeraImportada extends Calculador {
 
 
     public static final double RECARGO_SOBRE_PRECIO_UNITARIO = 1.03;
     public static final double IMPUESTO_ADUANERO = 1.05;
     public static final double MARGEN_COMERCIAL = 1.25;
 
-    public CalculoRemeraImportada(int precioUnitario) {
+    public CalculadorRemeraImportada(int precioUnitario) {
         super(precioUnitario);
     }
 
